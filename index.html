@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo (1).png" type="image/x-icon">
+
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+    <header>
+        <div class="main">
+        <div class="nav">
+            <div class="logo">
+                <img src ="logo (1).png">
+            </div>
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>What's New</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <section>
+      <div class="content">
+        <div class="text">
+            <div class="text1">It's not Just Coffee</div>
+            <div class="text1">It's <span>Starbucks</span></div>
+            <div class="details">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis molestiae <br> 
+                dolorum veritatis autem officia, nobis a saepe neque impedit quaerat dig <br> 
+                issimos iure itaque doloremque  magni exercitationem temporibus provi <br>
+                 dent quasi cpmmodo consequat.
+        </div>
+        <div class="button">
+            LEARN MORE
+        </div>
+        <div class="img">
+            <img src="img1.png" alt="not loaded" srcset="" class="cofeeImage">
+        </div>
+        <div class="thumbs"> 
+            <ul>
+                <li><img src="thumb1.png" id="thumb1" class="thumbImage" onclick="imageChanger('img1.png');colorChanger('#017143')"></li>
+                <li><img src="thumb2.png" id ="thumb2"class="thumbImage" onclick="imageChanger('img2.png');colorChanger('#eb7495')"></li>
+                <li><img src="thumb3.png" id="thumb3"class="thumbImage" onclick="imageChanger('img3.png');colorChanger('#d752b1')"></li>
+            </ul>
+        </div>
+
+        <div class="icons"> 
+            <ul>
+                <li><img src="facebook.png" id="thumb1"></li>
+                <li><img src="twitter.png"></li>
+                <li><img src="instagram.png" id="thumb3"></li>
+            </ul>
+        </div>
+      </div>
+    </section>
+</section>
+<script type="text/javascript">
+    
+    function imageChanger(event){
+        document.querySelector('.cofeeImage').src = event;
+    }
+    function colorChanger(color){
+       document.querySelector('.circle').style.background = color;
+    }
+</script>
+</body>
+</html>
